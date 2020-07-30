@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DCBC8DAB24D3239C00968ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DAA24D3239C00968ABB /* AppDelegate.swift */; };
+		DCBC8DAD24D3239C00968ABB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DAC24D3239C00968ABB /* GameViewController.swift */; };
+		DCBC8DB024D3239C00968ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC8DAE24D3239C00968ABB /* Main.storyboard */; };
+		DCBC8DB324D3239C00968ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC8DB124D3239C00968ABB /* LaunchScreen.storyboard */; };
+		DCBC8DBC24D3239C00968ABB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DBB24D3239C00968ABB /* AppDelegate.swift */; };
+		DCBC8DBE24D3239C00968ABB /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DBD24D3239C00968ABB /* GameViewController.swift */; };
+		DCBC8DC124D3239C00968ABB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBC8DBF24D3239C00968ABB /* Main.storyboard */; };
+		DCBC8DC424D3239C00968ABB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCBC8DC224D3239C00968ABB /* MainMenu.xib */; };
+		DCBC8DC624D3239C00968ABB /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DA224D3239B00968ABB /* Experience.rcproject */; };
+		DCBC8DC724D3239C00968ABB /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DA224D3239B00968ABB /* Experience.rcproject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DCBC8DA224D3239B00968ABB /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
+		DCBC8DA724D3239C00968ABB /* aloka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aloka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBC8DAA24D3239C00968ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCBC8DAC24D3239C00968ABB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DCBC8DAF24D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCBC8DB224D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DCBC8DB424D3239C00968ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCBC8DB924D3239C00968ABB /* aloka.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aloka.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBC8DBB24D3239C00968ABB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DCBC8DBD24D3239C00968ABB /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		DCBC8DC024D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DCBC8DC324D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DCBC8DC524D3239C00968ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCBC8DA424D3239C00968ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBC8DB624D3239C00968ABB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DCBC8D9C24D3239B00968ABB = {
+			isa = PBXGroup;
+			children = (
+				DCBC8DA124D3239B00968ABB /* aloka Shared */,
+				DCBC8DA924D3239C00968ABB /* aloka iOS */,
+				DCBC8DBA24D3239C00968ABB /* aloka macOS */,
+				DCBC8DA824D3239C00968ABB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCBC8DA124D3239B00968ABB /* aloka Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC8DA224D3239B00968ABB /* Experience.rcproject */,
+			);
+			path = "aloka Shared";
+			sourceTree = "<group>";
+		};
+		DCBC8DA824D3239C00968ABB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC8DA724D3239C00968ABB /* aloka.app */,
+				DCBC8DB924D3239C00968ABB /* aloka.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCBC8DA924D3239C00968ABB /* aloka iOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC8DAA24D3239C00968ABB /* AppDelegate.swift */,
+				DCBC8DAC24D3239C00968ABB /* GameViewController.swift */,
+				DCBC8DAE24D3239C00968ABB /* Main.storyboard */,
+				DCBC8DB124D3239C00968ABB /* LaunchScreen.storyboard */,
+				DCBC8DB424D3239C00968ABB /* Info.plist */,
+			);
+			path = "aloka iOS";
+			sourceTree = "<group>";
+		};
+		DCBC8DBA24D3239C00968ABB /* aloka macOS */ = {
+			isa = PBXGroup;
+			children = (
+				DCBC8DBB24D3239C00968ABB /* AppDelegate.swift */,
+				DCBC8DBD24D3239C00968ABB /* GameViewController.swift */,
+				DCBC8DBF24D3239C00968ABB /* Main.storyboard */,
+				DCBC8DC224D3239C00968ABB /* MainMenu.xib */,
+				DCBC8DC524D3239C00968ABB /* Info.plist */,
+			);
+			path = "aloka macOS";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCBC8DA624D3239C00968ABB /* aloka iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBC8DCA24D3239C00968ABB /* Build configuration list for PBXNativeTarget "aloka iOS" */;
+			buildPhases = (
+				DCBC8DA324D3239C00968ABB /* Sources */,
+				DCBC8DA424D3239C00968ABB /* Frameworks */,
+				DCBC8DA524D3239C00968ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aloka iOS";
+			productName = "aloka iOS";
+			productReference = DCBC8DA724D3239C00968ABB /* aloka.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DCBC8DB824D3239C00968ABB /* aloka macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBC8DCD24D3239C00968ABB /* Build configuration list for PBXNativeTarget "aloka macOS" */;
+			buildPhases = (
+				DCBC8DB524D3239C00968ABB /* Sources */,
+				DCBC8DB624D3239C00968ABB /* Frameworks */,
+				DCBC8DB724D3239C00968ABB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "aloka macOS";
+			productName = "aloka macOS";
+			productReference = DCBC8DB924D3239C00968ABB /* aloka.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCBC8D9D24D3239B00968ABB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					DCBC8DA624D3239C00968ABB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					DCBC8DB824D3239C00968ABB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = DCBC8DA024D3239B00968ABB /* Build configuration list for PBXProject "aloka" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCBC8D9C24D3239B00968ABB;
+			productRefGroup = DCBC8DA824D3239C00968ABB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCBC8DA624D3239C00968ABB /* aloka iOS */,
+				DCBC8DB824D3239C00968ABB /* aloka macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCBC8DA524D3239C00968ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBC8DB024D3239C00968ABB /* Main.storyboard in Resources */,
+				DCBC8DB324D3239C00968ABB /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBC8DB724D3239C00968ABB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBC8DC124D3239C00968ABB /* Main.storyboard in Resources */,
+				DCBC8DC424D3239C00968ABB /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCBC8DA324D3239C00968ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBC8DAD24D3239C00968ABB /* GameViewController.swift in Sources */,
+				DCBC8DAB24D3239C00968ABB /* AppDelegate.swift in Sources */,
+				DCBC8DC624D3239C00968ABB /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCBC8DB524D3239C00968ABB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBC8DBE24D3239C00968ABB /* GameViewController.swift in Sources */,
+				DCBC8DBC24D3239C00968ABB /* AppDelegate.swift in Sources */,
+				DCBC8DC724D3239C00968ABB /* Experience.rcproject in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DCBC8DAE24D3239C00968ABB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBC8DAF24D3239C00968ABB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCBC8DB124D3239C00968ABB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBC8DB224D3239C00968ABB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DCBC8DBF24D3239C00968ABB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBC8DC024D3239C00968ABB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DCBC8DC224D3239C00968ABB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCBC8DC324D3239C00968ABB /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DCBC8DC824D3239C00968ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCBC8DC924D3239C00968ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DCBC8DCB24D3239C00968ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUCB33MFQZ;
+				INFOPLIST_FILE = "aloka iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.aloka;
+				PRODUCT_NAME = aloka;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DCBC8DCC24D3239C00968ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CUCB33MFQZ;
+				INFOPLIST_FILE = "aloka iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.aloka;
+				PRODUCT_NAME = aloka;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCBC8DCE24D3239C00968ABB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CUCB33MFQZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aloka macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.aloka;
+				PRODUCT_NAME = aloka;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCBC8DCF24D3239C00968ABB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = CUCB33MFQZ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "aloka macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.newnoetic.aloka;
+				PRODUCT_NAME = aloka;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCBC8DA024D3239B00968ABB /* Build configuration list for PBXProject "aloka" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBC8DC824D3239C00968ABB /* Debug */,
+				DCBC8DC924D3239C00968ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBC8DCA24D3239C00968ABB /* Build configuration list for PBXNativeTarget "aloka iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBC8DCB24D3239C00968ABB /* Debug */,
+				DCBC8DCC24D3239C00968ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBC8DCD24D3239C00968ABB /* Build configuration list for PBXNativeTarget "aloka macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBC8DCE24D3239C00968ABB /* Debug */,
+				DCBC8DCF24D3239C00968ABB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCBC8D9D24D3239B00968ABB /* Project object */;
+}
