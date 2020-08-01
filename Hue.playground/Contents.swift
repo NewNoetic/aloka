@@ -30,9 +30,13 @@ struct LightState: Codable {
     var bri: Int
     var hue: Int
     var sat: Int
+    var effect: String
+    var reachable: Bool
+    var transitiontime: Int?
 }
 
 struct Light: Codable {
+    var id: String!
     var name: String
     var type: String
     var state: LightState
@@ -47,9 +51,14 @@ let cancellable = session.dataTaskPublisher(for: getLights)
             print("Success")
         }
     } receiveValue: { value in
-        let lights = (try? JSONDecoder().decode([String: Light].self, from: value.data))?.values
+        let lightsDictionary = (try? JSONDecoder().decode([String: Light].self, from: value.data))
+        let lights = lightsDictionary?.map({ (key, value) -> Light in
+            var light = value
+            light.id = key
+            return light
+        })
         lights?.forEach({ light in
-            print(light.state.hue)
+            print(light)
         })
     }
 
