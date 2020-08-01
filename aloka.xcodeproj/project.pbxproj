@@ -33,6 +33,7 @@
 		DCBC8DC024D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCBC8DC324D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DCBC8DC524D3239C00968ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCE3913824D5529000A243B9 /* Hue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		DCBC8D9C24D3239B00968ABB = {
 			isa = PBXGroup;
 			children = (
+				DCE3913824D5529000A243B9 /* Hue.playground */,
 				DCBC8DA124D3239B00968ABB /* aloka Shared */,
 				DCBC8DA924D3239C00968ABB /* aloka iOS */,
 				DCBC8DBA24D3239C00968ABB /* aloka macOS */,
