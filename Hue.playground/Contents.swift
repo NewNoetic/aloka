@@ -42,9 +42,6 @@ struct Light: Codable {
     var state: LightState
 }
 
-//typealias DataTaskValue = (data: Data, response: URLResponse)
-//typealias DataTaskPublisher = AnyPublisher<DataTaskValue, URLError>
-
 let c = session.dataTaskPublisher(for: getLights)
     .flatMap { (value) -> Publishers.Zip3<URLSession.DataTaskPublisher, URLSession.DataTaskPublisher, URLSession.DataTaskPublisher> in
         let lightsDictionary = (try? JSONDecoder().decode([String: Light].self, from: value.data))
@@ -56,9 +53,8 @@ let c = session.dataTaskPublisher(for: getLights)
         let lightChangePublishers = lights!.map({ (light) -> URLSession.DataTaskPublisher in
             var redRequest = URLRequest(url: (lightsEndpoint!.appendingPathComponent(light.id).appendingPathComponent("state")))
             redRequest.httpMethod = "PUT"
-            let state = LightState(bri: 100, hue: 56100)
+            let state = LightState(bri: 100, hue: Int.random(in: 0...65280))
             redRequest.httpBody = try! JSONEncoder().encode(state)
-//            print(redRequest)
             return session.dataTaskPublisher(for: redRequest)
         })
         return lightChangePublishers[0].zip(lightChangePublishers[1], lightChangePublishers[2])

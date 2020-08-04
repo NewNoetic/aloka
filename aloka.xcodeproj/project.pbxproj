@@ -17,6 +17,10 @@
 		DCBC8DC424D3239C00968ABB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCBC8DC224D3239C00968ABB /* MainMenu.xib */; };
 		DCBC8DC624D3239C00968ABB /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DA224D3239B00968ABB /* Experience.rcproject */; };
 		DCBC8DC724D3239C00968ABB /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = DCBC8DA224D3239B00968ABB /* Experience.rcproject */; };
+		DCF8EF3D24D9734100CBDD12 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8EF3C24D9734100CBDD12 /* Hue.swift */; };
+		DCF8EF3E24D9734100CBDD12 /* Hue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8EF3C24D9734100CBDD12 /* Hue.swift */; };
+		DCF8EF4124D9830600CBDD12 /* DeskExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8EF4024D9830600CBDD12 /* DeskExperience.swift */; };
+		DCF8EF4224D9830600CBDD12 /* DeskExperience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF8EF4024D9830600CBDD12 /* DeskExperience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,8 @@
 		DCBC8DC324D3239C00968ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DCBC8DC524D3239C00968ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE3913824D5529000A243B9 /* Hue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Hue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		DCF8EF3C24D9734100CBDD12 /* Hue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hue.swift; sourceTree = "<group>"; };
+		DCF8EF4024D9830600CBDD12 /* DeskExperience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeskExperience.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				DCBC8DA224D3239B00968ABB /* Experience.rcproject */,
+				DCF8EF3C24D9734100CBDD12 /* Hue.swift */,
+				DCF8EF4024D9830600CBDD12 /* DeskExperience.swift */,
 			);
 			path = "aloka Shared";
 			sourceTree = "<group>";
@@ -206,7 +214,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCBC8DAD24D3239C00968ABB /* GameViewController.swift in Sources */,
+				DCF8EF4124D9830600CBDD12 /* DeskExperience.swift in Sources */,
 				DCBC8DAB24D3239C00968ABB /* AppDelegate.swift in Sources */,
+				DCF8EF3D24D9734100CBDD12 /* Hue.swift in Sources */,
 				DCBC8DC624D3239C00968ABB /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCBC8DBE24D3239C00968ABB /* GameViewController.swift in Sources */,
+				DCF8EF4224D9830600CBDD12 /* DeskExperience.swift in Sources */,
 				DCBC8DBC24D3239C00968ABB /* AppDelegate.swift in Sources */,
+				DCF8EF3E24D9734100CBDD12 /* Hue.swift in Sources */,
 				DCBC8DC724D3239C00968ABB /* Experience.rcproject in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -378,7 +390,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUCB33MFQZ;
 				INFOPLIST_FILE = "aloka iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,7 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CUCB33MFQZ;
 				INFOPLIST_FILE = "aloka iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
