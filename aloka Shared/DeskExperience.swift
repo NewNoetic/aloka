@@ -48,7 +48,9 @@ class DeskExperience {
             light.components.set(redModel)
             
             if var hueLight = Hue.shared.lights.filter({ light.name.contains($0.name) }).first {
-                hueLight.state.bri = 20
+                var newState = LightState()
+                newState.bri = 20
+                hueLight.state = newState
                 Hue.shared.sync(light: hueLight)
             }
         }
@@ -60,7 +62,9 @@ class DeskExperience {
             light.components.set(self.originalModels[light.name]!)
             
             if var hueLight = Hue.shared.lights.filter({ light.name.contains($0.name) }).first {
-                hueLight.state.bri = 50
+                var newState = LightState()
+                newState.bri = 100
+                hueLight.state = newState
                 Hue.shared.sync(light: hueLight)
             }
         }
