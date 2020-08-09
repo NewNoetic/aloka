@@ -13,74 +13,49 @@ import Combine
 class DeskExperience {
     var arView: ARView
     var requests: [AnyCancellable] = []
-
-    var collisionStarted: Cancellable?
-    var collisionUpdated: Cancellable?
-    var collisionEnded: Cancellable?
+    
+    var collisionUpdates: [Cancellable] = []
+    
+    var originalModels: [String:ModelComponent] = [:]
     
     init(arView: ARView) {
         self.arView = arView
     }
     
     func start() {
-        // Load the "Desk" scene from the "Experience" Reality File
         let deskAnchor = try! Experience.loadDesk()
-
-        deskAnchor.red?.generateCollisionShapes(recursive: true)
-        deskAnchor.barLeft?.generateCollisionShapes(recursive: true)
-        deskAnchor.barRight?.generateCollisionShapes(recursive: true)
-        deskAnchor.barStrip?.generateCollisionShapes(recursive: true)
         
-        print(deskAnchor.red!)
-        print(deskAnchor.barLeft!)
-        print(deskAnchor.barRight!)
-        print(deskAnchor.barStrip!)
-        
-        collisionStarted = arView.scene.subscribe(to: CollisionEvents.Began.self) { (event) in
-            print("began \(event)")
+        let actualEntities = deskAnchor.children[0].children[0].children.compactMap { (composerEntity) -> Entity? in
+            guard composerEntity.name.contains("light") || composerEntity.name.contains("field") else { return nil }
+            let child = composerEntity.children.first
+            child?.name = composerEntity.name
+            return child
         }
-
-        collisionUpdated = arView.scene.subscribe(to: CollisionEvents.Updated.self) { (event) in
-            print("updated")
+        actualEntities.forEach { (entity) in
+            entity.generateCollisionShapes(recursive: true)
         }
         
-        collisionEnded = arView.scene.subscribe(to: CollisionEvents.Ended.self) { (event) in
-            print("ended \(event)")
+        let began = self.arView.scene.subscribe(to: CollisionEvents.Began.self) { event in
+            let light = event.entityA
+            guard light.name.contains("light") else { return }
+            print("Light collision began\n\(event)")
+            
+            let originalModel: ModelComponent = light.components[ModelComponent]!.self
+            self.originalModels[light.name] = originalModel
+            
+            var redModel = originalModel
+            redModel.materials = [SimpleMaterial(color: .red, isMetallic: true)]
+            light.components.set(redModel)
+        }
+        let ended = self.arView.scene.subscribe(to: CollisionEvents.Ended.self) { event in
+            let light = event.entityA
+            guard light.name.contains("light") else { return }
+            print("Light collision ended\n\(event)")
+            
+            light.components.set(self.originalModels[light.name]!)
         }
         
-        
-        
-//        deskAnchor.actions.touch.onAction = { (entity: Entity?) in
-//            guard let entity = entity else { return }
-//            print("entities touched, action for \(entity.name)")
-//
-//            var url = lightsEndpoint!
-//
-//            switch entity {
-//            case deskAnchor.barLeft:
-//                url.appendPathComponent("5")
-//            case deskAnchor.barRight:
-//                url.appendPathComponent("6")
-//            case deskAnchor.barStrip:
-//                url.appendPathComponent("7")
-//            default:
-//                break
-//            }
-//
-//            var changeRequest = URLRequest(url: url.appendingPathComponent("state"))
-//            changeRequest.httpMethod = "PUT"
-//            let state = LightState(bri: 50, hue: Int.random(in: 0...65280))
-//            changeRequest.httpBody = try! JSONEncoder().encode(state)
-//            print(changeRequest.debugDescription)
-//            let changeCancellable = session.dataTaskPublisher(for: changeRequest)
-//                .eraseToAnyPublisher()
-//                .sink(receiveCompletion: { (completion) in
-//                    print("change complete")
-//                }) { (value) in
-//                    print((value.response as! HTTPURLResponse).statusCode)
-//            }
-//            self.requests.append(changeCancellable)
-//        }
+        self.collisionUpdates.append(contentsOf: [began, ended])
         
         arView.scene.anchors.append(deskAnchor)
     }

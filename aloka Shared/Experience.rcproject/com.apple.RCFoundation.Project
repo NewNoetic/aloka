@@ -32,6 +32,34 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
+                                          "duration" : 1
+                                        },
+                                        "name" : {
+                                          "type" : "wait"
+                                        }
+                                      },
+                                      "identifier" : "C5AB63D8-E08F-46EA-96BA-38D06A9569A2",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "0857F9C5-F098-473E-AB9F-527F21F7B8E7",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
                                           "angularCoefficient" : 1,
                                           "direction" : "clockwise",
                                           "duration" : 3.4698567390441895,
@@ -88,7 +116,7 @@
                                 },
                                 "name" : "start"
                               },
-                              "identifier" : "BA215CB7-C600-4DD5-880C-F0B37D857F7A",
+                              "identifier" : "88FD8CA6-0F69-40D2-9ED4-42E8D7A56DA9",
                               "isEnabled" : true
                             }
                           ],
@@ -115,10 +143,29 @@
                     "overrides" : {
                       "arguments" : [
                         [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.10000000000000001
+                          }
+                        ],
+                        [
                           "material",
                           {
                             "typeName" : "String",
                             "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
                           }
                         ],
                         [
@@ -145,14 +192,14 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "barRight"
+                            "value" : "lightRight"
                           }
                         ],
                         [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
-                            "value" : true
+                            "value" : false
                           }
                         ],
                         [
@@ -173,26 +220,33 @@
                             "typeName" : "REMotionType",
                             "value" : "static"
                           }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "sphere"
+                          }
                         ]
                       ]
                     },
                     "transform" : {
                       "matrix" : [
                         1,
-                        9.468927319005436e-16,
+                        8.2549326998253791e-16,
                         1.1102230246251565e-16,
                         0,
-                        -9.468927319005436e-16,
+                        -8.2549326998253791e-16,
                         1,
                         -1.1217970635801149e-31,
                         0,
                         -1.1102230246251565e-16,
-                        7.0534950773915951e-33,
+                        2.0531539918503197e-32,
                         1,
                         0,
-                        1.152579665184021,
-                        1.1313427686691284,
-                        1.7496250867843628,
+                        1.3279805183410645,
+                        1.0573313236236572,
+                        1.6930136680603027,
                         1
                       ]
                     }
@@ -303,7 +357,7 @@
                           "material",
                           {
                             "typeName" : "String",
-                            "value" : "standard"
+                            "value" : "paintEnamelMatte"
                           }
                         ],
                         [
@@ -342,14 +396,14 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "red"
+                            "value" : "fieldRed"
                           }
                         ],
                         [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
-                            "value" : true
+                            "value" : false
                           }
                         ],
                         [
@@ -369,6 +423,13 @@
                           {
                             "typeName" : "REMotionType",
                             "value" : "static"
+                          }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "sphere"
                           }
                         ]
                       ]
@@ -398,10 +459,29 @@
                     "overrides" : {
                       "arguments" : [
                         [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.10000000000000001
+                          }
+                        ],
+                        [
                           "material",
                           {
                             "typeName" : "String",
                             "value" : "standard"
+                          }
+                        ],
+                        [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
                           }
                         ],
                         [
@@ -428,14 +508,14 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "barLeft"
+                            "value" : "lightLeft"
                           }
                         ],
                         [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
-                            "value" : true
+                            "value" : false
                           }
                         ],
                         [
@@ -456,16 +536,23 @@
                             "typeName" : "REMotionType",
                             "value" : "static"
                           }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "sphere"
+                          }
                         ]
                       ]
                     },
                     "transform" : {
                       "matrix" : [
                         1,
-                        3.6628446908442682e-16,
+                        3.3711098678487381e-16,
                         0,
                         0,
-                        -3.6628446908442682e-16,
+                        -3.3711098678487381e-16,
                         1,
                         0,
                         0,
@@ -473,9 +560,9 @@
                         0,
                         1,
                         0,
-                        1.2188167572021484,
-                        1.1391245126724243,
-                        0.83181416988372803,
+                        1.2188259363174438,
+                        1.0899511575698853,
+                        0.83181858062744141,
                         1
                       ]
                     }
@@ -505,6 +592,25 @@
                           }
                         ],
                         [
+                          "materialColor",
+                          {
+                            "typeName" : "double4",
+                            "value" : [
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              0.93333500623703003,
+                              1
+                            ]
+                          }
+                        ],
+                        [
+                          "roundness",
+                          {
+                            "typeName" : "Double",
+                            "value" : 1
+                          }
+                        ],
+                        [
                           "type",
                           {
                             "typeName" : "String",
@@ -528,14 +634,14 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "barStrip"
+                            "value" : "lightStrip"
                           }
                         ],
                         [
                           "rigidBody-enabled",
                           {
                             "typeName" : "Bool",
-                            "value" : true
+                            "value" : false
                           }
                         ],
                         [
@@ -555,6 +661,13 @@
                           {
                             "typeName" : "REMotionType",
                             "value" : "static"
+                          }
+                        ],
+                        [
+                          "rigidBody-shapeType",
+                          {
+                            "typeName" : "String",
+                            "value" : "capsule"
                           }
                         ]
                       ]
@@ -585,6 +698,13 @@
                   "F7818E42-218B-49C7-8A31-5953A8ECD285" : {
                     "overrides" : {
                       "arguments" : [
+                        [
+                          "diameter",
+                          {
+                            "typeName" : "Double",
+                            "value" : 0.10000000000000001
+                          }
+                        ],
                         [
                           "material",
                           {
@@ -666,202 +786,25 @@
                   ]
                 ]
               },
-              "physicsMode" : "grid",
+              "physicsMode" : "none",
               "title" : "desk",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.80852019786834717,
-                  -1.4668330550193787e-08,
-                  0.58846831321716309,
+                  -0.0086528947576880455,
+                  -1.1641531488804091e-10,
+                  0.99996250867843628,
                   0,
-                  0.17105564475059509,
-                  0.95682030916213989,
-                  -0.23502077162265778,
+                  0.56203317642211914,
+                  0.82710033655166626,
+                  0.0048632528632879257,
                   0,
-                  -0.56305801868438721,
-                  0.29067990183830261,
-                  0.77360892295837402,
+                  -0.82706940174102783,
+                  0.56205421686172485,
+                  -0.0071563133969902992,
                   0,
-                  -1.9915484189987183,
-                  1.3600162267684937,
-                  3.6862711906433105,
-                  1
-                ],
-                "sceneTransform" : [
-                  1,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0.99999994039535522,
-                  0,
-                  0,
-                  0,
-                  0,
-                  0.99999994039535522,
-                  0,
-                  0,
-                  0,
-                  0,
-                  1
-                ]
-              }
-            }
-          ],
-          "__version" : 5
-        },
-        {
-          "__content" : [
-            {
-              "arAnchorSpecification" : {
-                "alignment" : "horizontal",
-                "name" : "surface"
-              },
-              "behaviors" : [
-                {
-                  "__content" : [
-                    {
-                      "accessibility" : {
-                        "__content" : [
-                          {
-                            "isEnabled" : false
-                          }
-                        ],
-                        "__version" : 1
-                      },
-                      "actionGroups" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "duration" : 1
-                                        },
-                                        "name" : {
-                                          "type" : "wait"
-                                        }
-                                      },
-                                      "identifier" : "9EC21856-73F2-4DEF-99C2-510C82785D37",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "A62A466A-033C-4D5F-8473-CD818F97573F",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        },
-                        {
-                          "__content" : [
-                            {
-                              "configurations" : [
-                                {
-                                  "__content" : [
-                                    {
-                                      "configurationBox" : {
-                                        "configuration" : {
-                                          "targetScene" : "F9610871-0955-494F-A5C3-51D1A281BAB3"
-                                        },
-                                        "name" : {
-                                          "type" : "changeScene"
-                                        }
-                                      },
-                                      "identifier" : "E4B1608C-1F55-4B66-89CD-F1C8ADDAFF57",
-                                      "isEnabled" : true
-                                    }
-                                  ],
-                                  "__version" : 1
-                                }
-                              ],
-                              "identifier" : "06203D48-0FB2-43A7-8483-95B75B5DE974",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ],
-                      "color" : [
-                        0.364705890417099,
-                        0.74117648601531982,
-                        0.69019609689712524,
-                        1
-                      ],
-                      "identifier" : "403E4476-2A98-4A74-B6B7-5A82E531A490",
-                      "isEnabled" : true,
-                      "isLooping" : false,
-                      "isModal" : false,
-                      "name" : "changeScene",
-                      "triggers" : [
-                        {
-                          "__content" : [
-                            {
-                              "configurationBox" : {
-                                "configuration" : {
-
-                                },
-                                "name" : "start"
-                              },
-                              "identifier" : "7AABAC5A-329A-49D4-AFF7-80B5FA13B31B",
-                              "isEnabled" : true
-                            }
-                          ],
-                          "__version" : 1
-                        }
-                      ]
-                    }
-                  ],
-                  "__version" : 3
-                }
-              ],
-              "gravity" : [
-                0,
-                -9.8000001907348633,
-                0
-              ],
-              "identifier" : "3249ECFA-85AC-4FC5-9378-5DCC3D56DB18",
-              "material" : "concrete",
-              "overrides" : {
-                "children" : {
-                  "43C26DDF-AEDB-4CA4-BA68-260B5C5B4134" : null,
-                  "Cube" : null
-                },
-                "factory" : null,
-                "runtimeAttributes" : [
-                  [
-                    "isAccessibilityEnabled",
-                    {
-                      "typeName" : "Bool",
-                      "value" : false
-                    }
-                  ]
-                ]
-              },
-              "physicsMode" : "grid",
-              "title" : "blank",
-              "viewTransform" : {
-                "cameraTransform" : [
-                  0.95047754049301147,
-                  -2.9802325940408991e-08,
-                  0.31079331040382385,
-                  0,
-                  0.057693451642990112,
-                  0.98261892795562744,
-                  -0.17644093930721283,
-                  0,
-                  -0.30539101362228394,
-                  0.18563383817672729,
-                  0.93395733833312988,
-                  0,
-                  -3.4515218734741211,
-                  1.7432953119277954,
-                  6.5257973670959473,
+                  -3.248772144317627,
+                  2.6097254753112793,
+                  0.29435232281684875,
                   1
                 ],
                 "sceneTransform" : [
