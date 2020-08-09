@@ -192,7 +192,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "lightRight"
+                            "value" : "light Bar right"
                           }
                         ],
                         [
@@ -508,7 +508,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "lightLeft"
+                            "value" : "light Bar left"
                           }
                         ],
                         [
@@ -634,7 +634,7 @@
                           "entityName",
                           {
                             "typeName" : "String",
-                            "value" : "lightStrip"
+                            "value" : "light Bar strip"
                           }
                         ],
                         [

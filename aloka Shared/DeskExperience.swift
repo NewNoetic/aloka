@@ -13,9 +13,7 @@ import Combine
 class DeskExperience {
     var arView: ARView
     var requests: [AnyCancellable] = []
-    
     var collisionUpdates: [Cancellable] = []
-    
     var originalModels: [String:ModelComponent] = [:]
     
     init(arView: ARView) {
@@ -23,6 +21,8 @@ class DeskExperience {
     }
     
     func start() {
+        Hue.shared.getLights()
+
         let deskAnchor = try! Experience.loadDesk()
         
         let actualEntities = deskAnchor.children[0].children[0].children.compactMap { (composerEntity) -> Entity? in
@@ -46,6 +46,11 @@ class DeskExperience {
             var redModel = originalModel
             redModel.materials = [SimpleMaterial(color: .red, isMetallic: true)]
             light.components.set(redModel)
+            
+            if var hueLight = Hue.shared.lights.filter({ light.name.contains($0.name) }).first {
+                hueLight.state.bri = 20
+                Hue.shared.sync(light: hueLight)
+            }
         }
         let ended = self.arView.scene.subscribe(to: CollisionEvents.Ended.self) { event in
             let light = event.entityA
@@ -53,6 +58,11 @@ class DeskExperience {
             print("Light collision ended\n\(event)")
             
             light.components.set(self.originalModels[light.name]!)
+            
+            if var hueLight = Hue.shared.lights.filter({ light.name.contains($0.name) }).first {
+                hueLight.state.bri = 50
+                Hue.shared.sync(light: hueLight)
+            }
         }
         
         self.collisionUpdates.append(contentsOf: [began, ended])

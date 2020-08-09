@@ -13,8 +13,7 @@ import Combine
 class GameViewController: NSViewController {
     
     @IBOutlet var arView: ARView!
-    
-    
+
     override func awakeFromNib() {
         let experience = DeskExperience(arView: arView)
         experience.start()
